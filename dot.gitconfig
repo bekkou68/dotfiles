@@ -43,6 +43,7 @@
   pl = pull --prune # always delete stale remote branches
   pr = pull --rebase
   ps = push
+  psf = push --force
   pst = push --tags
 
   rb = rebase
