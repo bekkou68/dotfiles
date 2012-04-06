@@ -36,6 +36,7 @@ Bundle 'yanktmp.vim'
 
 " GitHub repos
 Bundle 'ecomba/vim-ruby-refactoring'
+Bundle 'groenewege/vim-less'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'mattn/zencoding-vim'
 Bundle 'thinca/vim-quickrun'
