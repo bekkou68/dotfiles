@@ -48,6 +48,7 @@
   pst = push --tags
 
   rb = rebase
+  rbc = rebase --continue
   rbi = rebase -i
   rbrd = push --delete origin # Remote BRanch Delete
   rh = reset --hard
