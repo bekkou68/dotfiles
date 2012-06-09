@@ -45,6 +45,9 @@ setopt cdable_vars
 setopt list_packed
 setopt print_eight_bit # Print Japanese file name
 
+setopt no_beep
+setopt nolistbeep
+
 # Emacs keybind on terminal
 # *** Notice: If 'export EDITOR=vim', then automatically set 'bindkey -v'
 bindkey -e
