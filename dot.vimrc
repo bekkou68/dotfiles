@@ -148,6 +148,7 @@ set showmatch    " Show bracket pair
 set hidden       " Buffer switchable with not-saved buffers
 set scroll=1     " Set scroll number of ^u and ^d
 set noswapfile   " Make no swap file
+set visualbell   " No beep
 
 " Be careful: Input '^[' by '^V ['
 map co 0i#j     " Comment Out and move to next line
