@@ -99,23 +99,11 @@ set ignorecase
 " Find project
 map fp :!grep -r --exclude-dir=log --exclude-dir=tmp --color=auto
 
-" Center words for search
+" Center cursor when searched
 nmap n nzz
 nmap N Nzz
 nmap * *zz
 nmap # #zz
-nmap g* g*zz
-nmap g# g#zz
-
-
-" ----------------------------------------------------------------------
-" Movings
-" ----------------------------------------------------------------------
-" Back to previous File
-map bf :e #<cr>
-
-" Back to previous jumped Cursor
-map bc `'
 
 
 " ----------------------------------------------------------------------
@@ -150,9 +138,8 @@ set scroll=1     " Set scroll number of ^u and ^d
 set noswapfile   " Make no swap file
 set visualbell   " No beep
 
-" Be careful: Input '^[' by '^V ['
-map co 0i#j     " Comment Out and move to next line
-map hco 0i-#j   " Haml Comment Out and move to next line
+map bf :e #<cr>  " Back to previous File
+map co 0i#j    " Comment Out and move to next line
 
 " Rename file
 " Usage: On file you want to change, type :Rename [new_file_name]
