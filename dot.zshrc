@@ -95,6 +95,26 @@ alias -g V='| view - -R'
 alias -g VR='| view - -R'
 
 # ----------------------------------------------------------------------
+# Prompt
+# ----------------------------------------------------------------------
+setopt prompt_subst
+autoload colors; colors
+
+# Git info
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' enable git svn hg
+zstyle ':vcs_info:*' formats '[%b]'
+zstyle ':vcs_info:*' actionformats '[%b] (%a)'
+
+precmd () {
+  psvar=()
+  vcs_info
+  [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
+}
+
+PROMPT=$'%B%F{green}%n@%M%f %F{blue}%~%f%b%1(v| %F{yellow}%1v%f|)\n%B%F{blue}$%f%b '
+
+# ----------------------------------------------------------------------
 # Others
 # ----------------------------------------------------------------------
 export EDITOR=vim
@@ -114,7 +134,3 @@ setopt nolistbeep
 # Emacs keybind on terminal
 # *** Notice: If 'export EDITOR=vim', then automatically set 'bindkey -v'
 bindkey -e
-
-# Apply extracted files
-source ~/.alias.zshrc
-source ~/.prompt.zshrc
