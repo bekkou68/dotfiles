@@ -42,7 +42,7 @@
   mg = merge
   mgnf = merge --no-ff # MerGe No Fast-foreword
 
-  pl = pull --prune # always delete stale remote branches
+  pp = pull --prune # always delete stale remote branches
   pr = pull --rebase
   ps = push
   psf = push --force
