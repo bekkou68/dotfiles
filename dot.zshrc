@@ -134,3 +134,5 @@ setopt nolistbeep
 # Emacs keybind on terminal
 # *** Notice: If 'export EDITOR=vim', then automatically set 'bindkey -v'
 bindkey -e
+
+eval "$(rbenv init -)"
