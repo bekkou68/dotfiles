@@ -10,3 +10,8 @@ defencoding utf-8
 
 hardstatus alwayslastline "%{= yk} %-Lw%23L>%{b kg} %n %t %{-}%+Lw%-023=%{b km} %{.c} %Y/%m/%d %02c:%s"
 startup_message off
+
+# Copy to clipboard on end of screen copy
+bindkey -m ' ' eval 'stuff " "' writebuf 'exec sh -c "pbcopy < /tmp/screen-exchange"'
+bindkey -m 'Y' eval 'stuff "Y"' writebuf 'exec sh -c "pbcopy < /tmp/screen-exchange"'
+bindkey -m 'W' eval 'stuff "W"' writebuf 'exec sh -c "pbcopy < /tmp/screen-exchange"'
