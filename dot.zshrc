@@ -135,4 +135,6 @@ setopt nolistbeep
 # *** Notice: If 'export EDITOR=vim', then automatically set 'bindkey -v'
 bindkey -e
 
+stty -ixon # Enable Ctrl+S to forward search (combinating with Ctrl+R)
+
 eval "$(rbenv init -)"
