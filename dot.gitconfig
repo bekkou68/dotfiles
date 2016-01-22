@@ -51,6 +51,7 @@
   rb = rebase
   rbc = rebase --continue
   rbi = rebase -i
+  rbr = branch -r
   rbrd = push --delete origin # Remote BRanch Delete
   rh = reset --hard
   rmc = rm --cached
