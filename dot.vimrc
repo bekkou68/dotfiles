@@ -29,7 +29,7 @@ Plugin 'OOP-javascript-indentation'
 Plugin 'endwise.vim'
 Plugin 'groenewege/vim-less'
 Plugin 'kchmck/vim-coffee-script'
-Plugin 'plasticboy/vim-markdown'
+Plugin 'bekkou68/vim-markdown' " change indent 4 to 2 of plasticboy/vim-markdown
 Plugin 'surround.vim'
 Plugin 'thinca/vim-quickrun'
 Plugin 'thinca/vim-scouter'
@@ -37,6 +37,8 @@ Plugin 'tpope/vim-rails'
 Plugin 'unite.vim'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'yanktmp.vim'
+
+let g:vim_markdown_folding_disabled = 1
 
 
 " ----------------------------------------------------------------------
