@@ -1,10 +1,10 @@
 " === Plugin Preparation
 " * Set up Vundle (see https://github.com/gmarik/vundle)
 "   * git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-"   * :BundleInstall
+"   * :PluginInstall
 "
 " === Plugin Cleaning
-" * :BundleClean
+" * :PluginClean
 
 
 " ----------------------------------------------------------------------
@@ -16,26 +16,26 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " Let Vundle manage Vundle
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
 " Vim Scripts repos (http://vim-scripts.org/vim/scripts.html)
 "
 " Dependency: (A -> B: A requires B)
 "   FuzzyFinder -> L9
-Bundle 'AutoComplPop'
-Bundle 'FuzzyFinder'
-Bundle 'L9'
-Bundle 'OOP-javascript-indentation'
-Bundle 'endwise.vim'
-Bundle 'groenewege/vim-less'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'surround.vim'
-Bundle 'thinca/vim-quickrun'
-Bundle 'thinca/vim-scouter'
-Bundle 'tpope/vim-rails'
-Bundle 'unite.vim'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'yanktmp.vim'
+Plugin 'AutoComplPop'
+Plugin 'FuzzyFinder'
+Plugin 'L9'
+Plugin 'OOP-javascript-indentation'
+Plugin 'endwise.vim'
+Plugin 'groenewege/vim-less'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'surround.vim'
+Plugin 'thinca/vim-quickrun'
+Plugin 'thinca/vim-scouter'
+Plugin 'tpope/vim-rails'
+Plugin 'unite.vim'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'yanktmp.vim'
 
 
 " ----------------------------------------------------------------------
