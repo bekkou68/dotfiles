@@ -19,9 +19,9 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Vim Scripts repos (http://vim-scripts.org/vim/scripts.html)
+"
 " Dependency: (A -> B: A requires B)
 "   FuzzyFinder -> L9
-"   ecomba/vim-ruby-refactoring -> matchit.vim
 Bundle 'AutoComplPop'
 Bundle 'FuzzyFinder'
 Bundle 'L9'
