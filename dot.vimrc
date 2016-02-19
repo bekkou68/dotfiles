@@ -19,16 +19,17 @@ call vundle#rc()
 Plugin 'gmarik/vundle'
 
 " Vim Scripts repos (http://vim-scripts.org/vim/scripts.html)
-"
-" Dependency: (A -> B: A requires B)
-"   FuzzyFinder -> L9
+" --- Depended repos
+Plugin 'L9' " -> FuzzyFinder
+Plugin 'godlygeek/tabular' " -> plasticboy/vim-markdown
+" --- repos
 Plugin 'AutoComplPop'
 Plugin 'FuzzyFinder'
-Plugin 'L9'
 Plugin 'OOP-javascript-indentation'
 Plugin 'endwise.vim'
 Plugin 'groenewege/vim-less'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'plasticboy/vim-markdown'
 Plugin 'surround.vim'
 Plugin 'thinca/vim-quickrun'
 Plugin 'thinca/vim-scouter'
