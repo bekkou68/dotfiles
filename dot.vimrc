@@ -27,17 +27,15 @@ Bundle 'FuzzyFinder'
 Bundle 'L9'
 Bundle 'OOP-javascript-indentation'
 Bundle 'endwise.vim'
-Bundle 'surround.vim'
-Bundle 'unite.vim'
-Bundle 'yanktmp.vim'
-
-" GitHub repos
 Bundle 'groenewege/vim-less'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'surround.vim'
 Bundle 'thinca/vim-quickrun'
 Bundle 'thinca/vim-scouter'
 Bundle 'tpope/vim-rails'
+Bundle 'unite.vim'
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'yanktmp.vim'
 
 
 " ----------------------------------------------------------------------
