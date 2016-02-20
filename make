@@ -17,15 +17,20 @@ echo '* * * Start setting up Vundle'
 vundledir=~/.vim/bundle/Vundle.vim
 if [ -e $vundledir ]; then
   echo '* * * * * * Repository already exists'
+  echo ''
 else
   echo '* * * * * * Repository not exists'
+
   echo '* * * * * * Start cloning Vundle'
   git clone https://github.com/VundleVim/Vundle.vim.git $vundledir
   echo '* * * * * * End cloning Vundle'
-fi
-echo '* * * End setting up Vundle'
-echo ''
 
-echo '* * * Start Vundle PluginInstall'
-vim +PluginInstall +qall
-echo '* * * End Vundle PluginInstall'
+  echo '* * * Start Vundle PluginInstall'
+  vim +PluginInstall +qall
+  echo '* * * End Vundle PluginInstall'
+  echo ''
+fi
+
+echo '==========================================='
+echo '====== CONGRATS! EVERYTHING IS DONE! ======'
+echo '==========================================='
