@@ -12,8 +12,8 @@
 " ----------------------------------------------------------------------
 set nocompatible " Use extended functions of Vim
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " Let Vundle manage Vundle
 Plugin 'gmarik/vundle'
@@ -38,6 +38,9 @@ Plugin 'unite.vim'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'yanktmp.vim'
 
+call vundle#end() " required
+filetype plugin indent on " required
+
 let g:vim_markdown_folding_disabled = 1
 
 
@@ -45,7 +48,6 @@ let g:vim_markdown_folding_disabled = 1
 " File types
 " ----------------------------------------------------------------------
 filetype indent on " Indent depends on file type
-filetype plugin on " Valid plugin
 
 
 " ----------------------------------------------------------------------
