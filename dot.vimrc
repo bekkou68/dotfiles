@@ -1,12 +1,3 @@
-" === Plugin Preparation
-" * Set up Vundle (see https://github.com/gmarik/vundle)
-"   * git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-"   * :PluginInstall
-"
-" === Plugin Cleaning
-" * :PluginClean
-
-
 " ----------------------------------------------------------------------
 " Vundle
 " ----------------------------------------------------------------------
