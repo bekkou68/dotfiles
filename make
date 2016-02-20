@@ -26,6 +26,6 @@ fi
 echo '* * * End setting up Vundle'
 echo ''
 
-echo '======================================================'
-echo '=== CONGRATS! Now boot vim and exec :PluginInstall ==='
-echo '======================================================'
+echo '* * * Start Vundle PluginInstall'
+vim +PluginInstall +qall
+echo '* * * End Vundle PluginInstall'
