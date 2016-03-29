@@ -1,13 +1,13 @@
 " ----------------------------------------------------------------------
 " Vundle
 " ----------------------------------------------------------------------
-set nocompatible " Use extended functions of Vim
+
+" REQUIRE for starting Vundle
+set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-
-" Let Vundle manage Vundle
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim' " Let Vundle manage Vundle
 
 " Vim Scripts repos (http://vim-scripts.org/vim/scripts.html)
 " --- Depended repos
@@ -29,8 +29,9 @@ Plugin 'unite.vim'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'yanktmp.vim'
 
-call vundle#end() " required
-filetype plugin indent on " required
+" REQUIRE for finishing Vundle
+call vundle#end()
+filetype plugin indent on
 
 " vim-markdown
 let g:vim_markdown_folding_disabled = 1
