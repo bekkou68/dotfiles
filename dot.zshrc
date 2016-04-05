@@ -138,3 +138,4 @@ bindkey -e
 stty -ixon # Enable Ctrl+S to forward search (combinating with Ctrl+R)
 
 eval "$(rbenv init -)"
+eval "$(direnv hook zsh)"
