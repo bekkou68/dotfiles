@@ -21,6 +21,7 @@ Plugin 'endwise.vim'
 Plugin 'groenewege/vim-less'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'scrooloose/syntastic'
 Plugin 'surround.vim'
 Plugin 'thinca/vim-quickrun'
 Plugin 'thinca/vim-scouter'
@@ -64,6 +65,15 @@ map <silent> sp :call YanktmpPaste_p()<cr>
 map <silent> sP :call YanktmpPaste_P()<cr>
 let g:yanktmp_file = '/tmp/yanktmp'
 
+" syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " ----------------------------------------------------------------------
 " Space
