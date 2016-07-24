@@ -34,7 +34,7 @@ preexec() {
 # ----------------------------------------------------------------------
 # Aliases
 # ----------------------------------------------------------------------
-alias b='bundle'
+alias b='bundle install -j4'
 alias be='bundle exec'
 alias bo='bundle open'
 
