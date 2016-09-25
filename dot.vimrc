@@ -35,10 +35,6 @@ Plugin 'yanktmp.vim'
 call vundle#end()
 filetype plugin indent on
 
-" vim-markdown
-let g:vim_markdown_folding_disabled = 1
-let g:vim_markdown_new_list_item_indent = 2
-
 
 " ----------------------------------------------------------------------
 " File types
@@ -75,6 +71,10 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" vim-markdown
+let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_new_list_item_indent = 2
 
 " vim-tags
 let g:vim_tags_ctags_binary='/usr/local/bin/ctags' " Use Homebrew ctags
