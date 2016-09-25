@@ -48,6 +48,8 @@ alias ls='ls -FG'
 
 alias n='netstat -tuna'
 
+alias open-textedit='open -a TextEdit'
+
 alias sc='screen -U'
 alias screen='screen -U'
 
