@@ -23,6 +23,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'scrooloose/syntastic'
 Plugin 'surround.vim'
+Plugin 'szw/vim-tags'
 Plugin 'thinca/vim-quickrun'
 Plugin 'thinca/vim-scouter'
 Plugin 'tpope/vim-rails'
@@ -74,6 +75,9 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" vim-tags
+let g:vim_tags_ctags_binary='/usr/local/bin/ctags' " Use Homebrew ctags
 
 " ----------------------------------------------------------------------
 " Space
@@ -172,3 +176,6 @@ autocmd QuickfixCmdPost make,grep,grepadd,vimgrep,vimgrepadd cwin
 
 " Number of times to use ':' is more than ';'
 noremap ; :
+
+" Suggest several candidates if exists on jumping to definition
+nnoremap <C-]> g<C-]>
