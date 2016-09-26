@@ -78,6 +78,8 @@ let g:vim_markdown_new_list_item_indent = 2
 
 " vim-tags
 let g:vim_tags_ctags_binary='/usr/local/bin/ctags' " Use Homebrew ctags
+let g:vim_tags_auto_generate = 0
+
 
 " ----------------------------------------------------------------------
 " Space
