@@ -114,3 +114,7 @@ stty -ixon # Enable Ctrl+S to forward search (combinating with Ctrl+R)
 
 eval "$(rbenv init -)"
 eval "$(direnv hook zsh)"
+
+# Set key repeat
+defaults write -g KeyRepeat -int 2
+defaults write -g InitialKeyRepeat -int 15
