@@ -96,6 +96,10 @@ export EDITOR=vim
 export LANG=ja_JP.UTF-8
 export LSCOLORS=gxfxcxdxbxegedabagacad # Set color of ls
 
+# for MySQL v5.7
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+export DYLD_LIBRARY_PATH="/usr/local/opt/mysql@5.7/:$DYLD_LIBRARY_PATH"
+
 setopt auto_cd # cd-able without cd
 setopt auto_pushd # cd-able to past directories by cd -[tab]
 setopt correct # Correct wrong commands
