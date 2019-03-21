@@ -28,7 +28,6 @@ Plugin 'szw/vim-tags'
 Plugin 'thinca/vim-quickrun'
 Plugin 'thinca/vim-scouter'
 Plugin 'tpope/vim-rails'
-Plugin 'unite.vim'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'yanktmp.vim'
 
