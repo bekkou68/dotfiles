@@ -1,3 +1,14 @@
+# add -p := ファイル差分を部分的に add。
+# add -u := 変更があった部分のみ add。
+# add -A := add -u かつ、add .。
+#
+# blame -L 5,10 <filename> := 5 〜 10 行目に絞る。
+# blame -L /<rexp>/ <filename> := 正規表現で絞る。
+#
+# rebase -i HEAD~4 := 4 コミット分のコミットをまとめる。
+#
+# rm --cached := 管理下のままファイルを削除。
+
 [core]
   editor = /usr/bin/vim
   excludesfile = ~/.gitignore
@@ -8,13 +19,10 @@
   ui = auto
 [alias]
   a = add
-  ad = add
-  ada = add -A
   ap = add --patch
 
   bl = blame
   br = branch
-  bra = branch -a
   brd = branch -d
   brdf = branch -D # BRanch Delete Force
   brm = branch -m
@@ -22,13 +30,12 @@
 
   ca = commit -v --amend
   ci = commit -v
-  cl = clone
   cm = commit -m
   co = checkout
   cob = checkout -b
+  contributors = shortlog -sn # SCouter
 
   di = diff
-  dic = diff --cached
 
   fh = fetch
   fp = fetch --prune
@@ -50,17 +57,12 @@
 
   rb = rebase
   rbc = rebase --continue
-  rbi = rebase -i
   rbr = branch -r
   rbrd = push --delete origin # Remote BRanch Delete
-  rh = reset --hard
-  rmc = rm --cached
-  rs = reset
-  ru = remote update
 
-  sc = shortlog -sn # SCouter
-  sh = stash
+  rsh = reset --hard
+  rs = reset
+
   st = status -sb
 
-  t = tag
-  td = tag -d
+  staged = diff --cached
