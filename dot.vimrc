@@ -14,7 +14,7 @@ Plugin 'VundleVim/Vundle.vim' " Let Vundle manage Vundle
 Plugin 'L9' " -> FuzzyFinder
 Plugin 'godlygeek/tabular' " -> plasticboy/vim-markdown
 " --- repos
-Plugin 'AutoComplPop'
+"Plugin 'AutoComplPop' # heavy
 Plugin 'FuzzyFinder'
 Plugin 'OOP-javascript-indentation'
 Plugin 'endwise.vim'
