@@ -10,7 +10,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim' " Let Vundle manage Vundle
 
 " Vim Scripts repos (http://vim-scripts.org/vim/scripts.html)
-" --- Depended repos
+" --- repos for others
 Plugin 'L9' " -> FuzzyFinder
 Plugin 'godlygeek/tabular' " -> plasticboy/vim-markdown
 " --- repos
@@ -36,10 +36,14 @@ call vundle#end()
 filetype plugin indent on
 
 
+
+
 " ----------------------------------------------------------------------
 " File types
 " ----------------------------------------------------------------------
 filetype indent on " Indent depends on file type
+
+
 
 
 " ----------------------------------------------------------------------
@@ -50,28 +54,34 @@ set fileencodings=utf-8,eucjp,iso2022jp " Select automatically
 set fileformats=unix,dos,mac            " 改行コードの自動認識
 
 
+
+
 " ----------------------------------------------------------------------
-" Plugins
+" Plugin Customization
 " ----------------------------------------------------------------------
 
 "
 " AutoComplPop
 "
 " Default behavior is heavy so customize for performance.
-let g:acp_ignorecaseOption = 0 " Set as case sensitive.
 let g:acp_behaviorKeywordLength = 5
 
 "
 " matchit
+"
 let b:match_words="<begin>:<end>"
 
+"
 " yanktmp
+"
 map <silent> sy :call YanktmpYank()<cr>
 map <silent> sp :call YanktmpPaste_p()<cr>
 map <silent> sP :call YanktmpPaste_P()<cr>
 let g:yanktmp_file = '/tmp/yanktmp'
 
+"
 " syntastic
+"
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -81,13 +91,19 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+"
 " vim-markdown
+"
 let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_new_list_item_indent = 2
 
+"
 " vim-tags
+"
 let g:vim_tags_ctags_binary='/usr/local/bin/ctags' " Use Homebrew ctags
 let g:vim_tags_auto_generate = 0
+
+
 
 
 " ----------------------------------------------------------------------
@@ -98,6 +114,8 @@ set shiftwidth=2 " Shift width
 set expandtab    " Insert half space instead of tab
 
 
+
+
 " ----------------------------------------------------------------------
 " Statuses
 " ----------------------------------------------------------------------
@@ -106,6 +124,8 @@ set showcmd      " Show inputting command to status line
 
 " Display character code and break to status line
 set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
+
+
 
 
 " ----------------------------------------------------------------------
@@ -124,6 +144,8 @@ nmap * *zz
 nmap # #zz
 
 
+
+
 " ----------------------------------------------------------------------
 " Highlights
 " ----------------------------------------------------------------------
@@ -133,6 +155,8 @@ set hlsearch " Highlight searched strings
 " Highlight EOL space
 highlight EOLSpace ctermbg=white
 match EOLSpace /\s\+$/
+
+
 
 
 " ----------------------------------------------------------------------
@@ -145,8 +169,11 @@ match EOLSpace /\s\+$/
 :cnoremap <C-F> <Right>
 :cnoremap <C-K> <Delete>
 
+
+
+
 " ----------------------------------------------------------------------
-" make `:e not/existing/dir/foo.txt` to create 3 directories
+" Make `:e not/existing/dir/foo.txt` to create 3 directories
 " ----------------------------------------------------------------------
 " see: http://stackoverflow.com/questions/4292733/vim-creating-parent-directories-on-save
 function s:MkNonExDir(file, buf)
@@ -161,6 +188,9 @@ augroup BWCCreateDir
   autocmd!
   autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))
 augroup END
+
+
+
 
 " ----------------------------------------------------------------------
 " Others
