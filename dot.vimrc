@@ -14,7 +14,7 @@ Plugin 'VundleVim/Vundle.vim' " Let Vundle manage Vundle
 Plugin 'L9' " -> FuzzyFinder
 Plugin 'godlygeek/tabular' " -> plasticboy/vim-markdown
 " --- repos
-"Plugin 'AutoComplPop' # heavy
+Plugin 'AutoComplPop' " deeply customizable.
 Plugin 'FuzzyFinder'
 Plugin 'OOP-javascript-indentation'
 Plugin 'endwise.vim'
@@ -53,6 +53,15 @@ set fileformats=unix,dos,mac            " 改行コードの自動認識
 " ----------------------------------------------------------------------
 " Plugins
 " ----------------------------------------------------------------------
+
+"
+" AutoComplPop
+"
+" Default behavior is heavy so customize for performance.
+let g:acp_ignorecaseOption = 0 " Set as case sensitive.
+let g:acp_behaviorKeywordLength = 5
+
+"
 " matchit
 let b:match_words="<begin>:<end>"
 
