@@ -92,6 +92,7 @@ PROMPT=$'%B%F{green}%n@%M%f %F{blue}%~%f%b%1(v| %F{yellow}%1v%f|)\n%B%F{blue}$%f
 # ----------------------------------------------------------------------
 # Others
 # ----------------------------------------------------------------------
+export PATH=$HOME/.nodebrew/current/bin:$PATH # nodebrew
 export EDITOR=vim
 export LANG=ja_JP.UTF-8
 export LSCOLORS=gxfxcxdxbxegedabagacad # Set color of ls
