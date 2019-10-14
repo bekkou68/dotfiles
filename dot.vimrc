@@ -13,6 +13,9 @@ Plugin 'VundleVim/Vundle.vim' " Let Vundle manage Vundle
 " --- repos for others
 Plugin 'L9' " -> FuzzyFinder
 Plugin 'godlygeek/tabular' " -> plasticboy/vim-markdown
+" --- repos combination
+Plugin 'leafgarland/typescript-vim' " highlight .ts
+Plugin 'peitalin/vim-jsx-typescript' " highlight .tsx using leafgarland/typescript-vim
 " --- repos
 Plugin 'AutoComplPop' " deeply customizable.
 Plugin 'FuzzyFinder'
