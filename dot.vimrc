@@ -14,15 +14,16 @@ Plugin 'VundleVim/Vundle.vim' " Let Vundle manage Vundle
 Plugin 'L9' " -> FuzzyFinder
 Plugin 'godlygeek/tabular' " -> plasticboy/vim-markdown
 " --- repos combination
-Plugin 'leafgarland/typescript-vim' " highlight .ts
-Plugin 'peitalin/vim-jsx-typescript' " highlight .tsx using leafgarland/typescript-vim
+Plugin 'leafgarland/typescript-vim'
+Plugin 'peitalin/vim-jsx-typescript'
 " --- repos
 Plugin 'AutoComplPop' " deeply customizable.
 Plugin 'FuzzyFinder'
 Plugin 'OOP-javascript-indentation'
+Plugin 'Quramy/tsuquyomi' " typescript plugin. <Ctrl-]> for jumping to definition. requires `tsserver`, `npm install -g typescript`.
 Plugin 'endwise.vim'
 Plugin 'groenewege/vim-less'
-Plugin 'kchmck/vim-coffee-script'
+Plugin 'kchmck/vim-coffee-script' " only for coffee? for typescript?
 Plugin 'plasticboy/vim-markdown'
 Plugin 'scrooloose/syntastic'
 Plugin 'slim-template/vim-slim.git'
