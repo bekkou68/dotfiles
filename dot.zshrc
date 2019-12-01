@@ -96,6 +96,7 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH # nodebrew
 export EDITOR=vim
 export LANG=ja_JP.UTF-8
 export LSCOLORS=gxfxcxdxbxegedabagacad # Set color of ls
+export HOMEBREW_MAKE_JOBS=3 # Increase the number of homebrew jobs (default is the number of CPUs)
 
 # for MySQL v5.7
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
