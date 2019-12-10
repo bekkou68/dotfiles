@@ -50,6 +50,8 @@ alias n='netstat -tuna'
 
 alias open-textedit='open -a TextEdit'
 
+alias ps-book="git add . && git commit -m 'update' && git push origin HEAD"
+
 alias sc='screen -U'
 alias screen='screen -U'
 
