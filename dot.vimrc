@@ -27,7 +27,6 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'scrooloose/syntastic'
 Plugin 'slim-template/vim-slim.git'
 Plugin 'surround.vim'
-Plugin 'szw/vim-tags'
 Plugin 'thinca/vim-quickrun'
 Plugin 'thinca/vim-scouter'
 Plugin 'statianzo/vim-jade'
@@ -101,12 +100,6 @@ let g:syntastic_check_on_wq = 0
 "
 let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_new_list_item_indent = 2
-
-"
-" vim-tags
-"
-let g:vim_tags_ctags_binary='/usr/local/bin/ctags' " Use Homebrew ctags
-let g:vim_tags_auto_generate = 0
 
 
 
