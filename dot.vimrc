@@ -17,12 +17,12 @@ Plugin 'godlygeek/tabular' " -> plasticboy/vim-markdown
 Plugin 'leafgarland/typescript-vim'
 Plugin 'peitalin/vim-jsx-typescript'
 " --- repos
-Plugin 'AutoComplPop' " deeply customizable.
-Plugin 'FuzzyFinder'
+Plugin 'AutoComplPop'               " Keyword completion.
+Plugin 'FuzzyFinder'                " Find file by less keywords. `:FufFile` is like strong.
 Plugin 'OOP-javascript-indentation'
 Plugin 'endwise.vim'
 Plugin 'groenewege/vim-less'
-Plugin 'kchmck/vim-coffee-script' " only for coffee? for typescript?
+Plugin 'kchmck/vim-coffee-script'   " only for coffee? for typescript?
 Plugin 'plasticboy/vim-markdown'
 Plugin 'scrooloose/syntastic'
 Plugin 'slim-template/vim-slim.git'
