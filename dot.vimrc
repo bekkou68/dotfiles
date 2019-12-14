@@ -20,21 +20,21 @@ Plugin 'peitalin/vim-jsx-typescript'
 Plugin 'AutoComplPop' " deeply customizable.
 Plugin 'FuzzyFinder'
 Plugin 'OOP-javascript-indentation'
-Plugin 'Quramy/tsuquyomi' " typescript plugin. <Ctrl-]> for jumping to definition. requires `tsserver`, `npm install -g typescript`.
 Plugin 'endwise.vim'
 Plugin 'groenewege/vim-less'
 Plugin 'kchmck/vim-coffee-script' " only for coffee? for typescript?
 Plugin 'plasticboy/vim-markdown'
 Plugin 'scrooloose/syntastic'
 Plugin 'slim-template/vim-slim.git'
-Plugin 'statianzo/vim-jade'
 Plugin 'surround.vim'
 Plugin 'szw/vim-tags'
 Plugin 'thinca/vim-quickrun'
 Plugin 'thinca/vim-scouter'
+Plugin 'statianzo/vim-jade'
 Plugin 'tpope/vim-rails'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'yanktmp.vim'
+Plugin 'Quramy/tsuquyomi' " typescript plugin. <Ctrl-]> for jumping to definition.
 
 " REQUIRE for finishing Vundle
 call vundle#end()
@@ -68,7 +68,7 @@ set fileformats=unix,dos,mac            " 改行コードの自動認識
 "
 " AutoComplPop
 "
-" Default behavior is heavy so customize for performance.
+" Reduce value because default one causes heavy performance.
 let g:acp_behaviorKeywordLength = 5
 
 "
@@ -220,8 +220,8 @@ autocmd InsertLeave * set nopaste
 " After these command, list shown, type an item, then jump to there
 autocmd QuickfixCmdPost make,grep,grepadd,vimgrep,vimgrepadd cwin
 
-" Number of times to use ':' is more than ';'
+" Use ':' more than ';'
 noremap ; :
 
-" Suggest several candidates if exists on jumping to definition
+" Jump to definition of code with ctags.
 nnoremap <C-]> g<C-]>
