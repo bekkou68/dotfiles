@@ -8,6 +8,9 @@ compinit
 # Colorize completion list e.g. ls [tab]
 zstyle ':completion:*' list-colors 'di=36' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34'
 
+
+
+
 # ----------------------------------------------------------------------
 # History
 # ----------------------------------------------------------------------
@@ -16,6 +19,9 @@ HISTSIZE=1000000
 SAVEHIST=1000000
 setopt hist_ignore_dups # Ignore duplicated command of history
 setopt share_history # Share history between terminals by HISTFILE
+
+
+
 
 # ----------------------------------------------------------------------
 # screen
@@ -29,6 +35,9 @@ preexec() {
     echo -ne "\ek[$title]\e\\"
   fi
 }
+
+
+
 
 # ----------------------------------------------------------------------
 # Aliases
@@ -49,14 +58,27 @@ alias n='netstat -tuna'
 
 alias open-textedit='open -a TextEdit'
 
-alias ps-update="git add . ; git commit -m 'update' ; git push origin HEAD"
-
 alias sc='screen -U'
 alias screen='screen -U'
 
 alias sl='ls' # Hedge typo
 
 alias v='vim'
+
+#
+# complicated
+#
+
+alias ps-update="git add . ; git commit -m 'update' ; git push origin HEAD"
+
+alias ctags-rails='ctags \
+  --langmap=Ruby:.rb \
+  --exclude=".git*" \
+  --exclude="js/node_modules*" \
+  --exclude="*.tsx" --exclude="*.ts" --exclude="*.js" --exclude="*.json" --exclude="*.jade" \
+  --exclude="*.md" --exclude="*.md" \
+  -R \
+  -f "./tmp/tags" `pwd`'
 
 # Define alias `C` for copying terminal output.
 # example: `$ cat example.txt C`
@@ -71,6 +93,9 @@ elif which putclip >/dev/null 2>&1 ; then
   # Cygwin
   alias -g C='| putclip'
 fi
+
+
+
 
 # ----------------------------------------------------------------------
 # Prompt
@@ -91,6 +116,9 @@ precmd () {
 }
 
 PROMPT=$'%B%F{green}%n@%M%f %F{blue}%~%f%b%1(v| %F{yellow}%1v%f|)\n%B%F{blue}$%f%b '
+
+
+
 
 # ----------------------------------------------------------------------
 # Others
