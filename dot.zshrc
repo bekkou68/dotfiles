@@ -143,11 +143,12 @@ setopt print_eight_bit # Print Japanese file name
 setopt no_beep
 setopt nolistbeep
 
-# Emacs keybind on terminal
-# *** Notice: If 'export EDITOR=vim', then automatically set 'bindkey -v'
+# Emacs keybind on terminal.
+# example: Ctrl+A := begging-of-line
 bindkey -e
 
-stty -ixon # Enable Ctrl+S to forward search (combinating with Ctrl+R)
+# Enable Ctrl+S to forward search (combinating with Ctrl+R)
+stty -ixon
 
 eval "$(rbenv init -)"
 eval "$(direnv hook zsh)"
