@@ -1,5 +1,5 @@
 " ----------------------------------------------------------------------
-" Vundle
+" Plugin Installation
 " ----------------------------------------------------------------------
 
 " REQUIRE for starting Vundle
@@ -38,24 +38,6 @@ Plugin 'Quramy/tsuquyomi' " typescript plugin. <Ctrl-]> for jumping to definitio
 " REQUIRE for finishing Vundle
 call vundle#end()
 filetype plugin indent on
-
-
-
-
-" ----------------------------------------------------------------------
-" File types
-" ----------------------------------------------------------------------
-filetype indent on " Indent depends on file type
-
-
-
-
-" ----------------------------------------------------------------------
-" Character codes
-" ----------------------------------------------------------------------
-set encoding=utf-8                      " Default
-set fileencodings=utf-8,eucjp,iso2022jp " Select automatically
-set fileformats=unix,dos,mac            " 改行コードの自動認識
 
 
 
@@ -100,6 +82,24 @@ let g:syntastic_check_on_wq = 0
 "
 let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_new_list_item_indent = 2
+
+
+
+
+" ----------------------------------------------------------------------
+" File types
+" ----------------------------------------------------------------------
+filetype indent on " Indent depends on file type
+
+
+
+
+" ----------------------------------------------------------------------
+" Character codes
+" ----------------------------------------------------------------------
+set encoding=utf-8                      " Default
+set fileencodings=utf-8,eucjp,iso2022jp " Select automatically
+set fileformats=unix,dos,mac            " 改行コードの自動認識
 
 
 
