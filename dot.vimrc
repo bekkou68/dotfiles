@@ -200,7 +200,7 @@ augroup END
 " ----------------------------------------------------------------------
 " Others
 " ----------------------------------------------------------------------
-set nonu         " Not display line numbers
+set nu           " Not display line numbers
 set showmatch    " Show bracket pair
 set hidden       " Buffer switchable with not-saved buffers
 set scroll=1     " Set scroll number of ^u and ^d
