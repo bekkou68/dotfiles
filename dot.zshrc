@@ -20,13 +20,12 @@ setopt share_history # Share history between terminals by HISTFILE
 # ----------------------------------------------------------------------
 # screen
 # ----------------------------------------------------------------------
-# Show previous-typed command to title
-# Not to show lengthy title, show only command and a first arg if exists
+# Make tab title to show command executed previously.
 preexec() {
-  if [ $TERM = "screen" ]; then # Not to show previous-typed command on not screen
+  if [ $TERM = "screen" ]; then # For screen terminal only.
     command="${(z)2}"
-    array=(`echo $command`) # String to Array
-    title=(`echo "$array[1] $array[2]" | cut -c1-10`)
+    array=(`echo $command`) # String to Array.
+    title=(`echo "$array[1] $array[2]" | cut -c1-10`) # Do not make title redundant.
     echo -ne "\ek[$title]\e\\"
   fi
 }
@@ -59,7 +58,9 @@ alias sl='ls' # Hedge typo
 
 alias v='vim'
 
-# http://d.hatena.ne.jp/mollifier/20100317/p1
+# Define alias `C` for copying terminal output.
+# example: `$ cat example.txt C`
+# ref: http://d.hatena.ne.jp/mollifier/20100317/p1
 if which pbcopy >/dev/null 2>&1 ; then
   # Mac
   alias -g C='| pbcopy'
