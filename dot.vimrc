@@ -207,6 +207,7 @@ set scroll=1     " Set scroll number of ^u and ^d
 set noswapfile   " Make no swap file
 set visualbell   " No beep
 set tags="./tmp/tags,tags"   " Path for ctags
+set clipboard+=unnamed       " Make yank/paste links clipboard. It copys value to "* register".
 
 map bf :e #<cr>  " Back to previous File
 map co 0i#j    " Comment Out and move to next line
