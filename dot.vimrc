@@ -216,5 +216,17 @@ autocmd QuickfixCmdPost make,grep,grepadd,vimgrep,vimgrepadd cwin
 " Use ':' more than ';'
 noremap ; :
 
-" Jump to definition of code with ctags.
+" ctags
+" <C-]>  := Jump to definition of first candidate.
+" g<C-]> := Jump to definition. When other one found, show candidate list.
 nnoremap <C-]> g<C-]>
+
+
+
+
+" Tips:
+" [map]  := map (recursive) | noremap (no recursive)
+" n[map] := normal mode
+" v[map] := visual mode
+" c[map] := command line mode
+" i[map] := insert mode
