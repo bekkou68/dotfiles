@@ -158,14 +158,12 @@ match EOLSpace /\s\+$/
 
 
 " ----------------------------------------------------------------------
-" Command Line
+" Command Line (:xxx)
 " ----------------------------------------------------------------------
 " Emacs-like movings
-:cnoremap <C-A> <Home>
-:cnoremap <C-B> <Left>
-:cnoremap <C-D> <Delete>
-:cnoremap <C-F> <Right>
-:cnoremap <C-K> <Delete>
+:cnoremap <C-a> <Home>
+:cnoremap <C-b> <Left>
+:cnoremap <C-f> <Right>
 
 
 
