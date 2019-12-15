@@ -9,30 +9,31 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim' " Let Vundle manage Vundle
 
-" Dependent plugins.
-Plugin 'L9'                " -> FuzzyFinder
-Plugin 'godlygeek/tabular' " -> plasticboy/vim-markdown
+" FuzzyFinder
+Plugin 'vim-scripts/L9'          " -> FuzzyFinder
+Plugin 'vim-scripts/FuzzyFinder' " Find file by less keywords. `:FufFile` is like strong.
 
-" Combination plugins. (what?)
-Plugin 'leafgarland/typescript-vim'
-Plugin 'peitalin/vim-jsx-typescript'
+" vim-markdown
+Plugin 'godlygeek/tabular'       " -> plasticboy/vim-markdown
+Plugin 'plasticboy/vim-markdown' " Markdown highlight.
 
-" Main plugins.
-Plugin 'AutoComplPop'               " Keyword completion.
-Plugin 'FuzzyFinder'                " Find file by less keywords. `:FufFile` is like strong.
-Plugin 'tpope/vim-endwise'          " def ... end
+" for TypeScript
+Plugin 'leafgarland/typescript-vim'  " what?
+Plugin 'peitalin/vim-jsx-typescript' " what?
+Plugin 'Quramy/tsuquyomi'            " TypeScript IDE, TSServer client. <Ctrl-]> for jumping to definition.
+
+" etc (sort alphabetically)
 Plugin 'groenewege/vim-less'        " LESS highlight.
 Plugin 'kchmck/vim-coffee-script'   " CoffeeScript highlight, indenting, compiling.
-Plugin 'plasticboy/vim-markdown'    " Markdown highlight.
 Plugin 'scrooloose/syntastic'       " Syntax checking. (heavy?)
 Plugin 'slim-template/vim-slim'     " Slim highlight.
-Plugin 'tpope/vim-surround'         " Utils for surroundings.
-Plugin 'thinca/vim-quickrun'
-Plugin 'thinca/vim-scouter'
-Plugin 'statianzo/vim-jade'
+Plugin 'statianzo/vim-jade'         " Jade.
+Plugin 'thinca/vim-quickrun'        " Run code snippet on Vim. Select codes and `:QuickRun`.
+Plugin 'tpope/vim-endwise'          " def ... end
 Plugin 'tpope/vim-rails'            " Enable only Rails projects not to dirt env.
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'Quramy/tsuquyomi'           " TypeScript IDE, TSServer client. <Ctrl-]> for jumping to definition.
+Plugin 'tpope/vim-surround'         " Utils for surroundings.
+Plugin 'vim-ruby/vim-ruby'          " Ruby highlight, indent.
+Plugin 'vim-scripts/AutoComplPop'   " Keyword completion.
 
 " REQUIRE to finish Vundle.
 call vundle#end()
