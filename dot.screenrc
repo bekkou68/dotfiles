@@ -1,18 +1,20 @@
-escape 
-shell -${SHELL}
-
-defscrollback 20000
-
 # Characters
 defutf8 on
 defkanji utf-8
 encoding utf-8 utf-8
 defencoding utf-8
 
+startup_message off
+vbell off # vbell := flash display on error.
+
+escape  # Ctrl+O
+shell -${SHELL}
+
+defscrollback 20000
+altscreen on # altscreen := reflesh on ending vim, etc.
+
 # Customize footer.
 hardstatus alwayslastline "%{= yk} %-Lw%0L>%{b kg} %n %t %{-}%+Lw%-0=%{b km} %{.c}"
-
-startup_message off
 
 # Copy on screen to clipboard.
 # see: http://d.hatena.ne.jp/sugyan/20100706/1278357368
