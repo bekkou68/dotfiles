@@ -30,7 +30,7 @@ Plugin 'surround.vim'
 Plugin 'thinca/vim-quickrun'
 Plugin 'thinca/vim-scouter'
 Plugin 'statianzo/vim-jade'
-Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-rails'            " Enable only Rails projects not to dirt env.
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'yanktmp.vim'
 Plugin 'Quramy/tsuquyomi' " typescript plugin. <Ctrl-]> for jumping to definition.
@@ -82,6 +82,19 @@ let g:syntastic_check_on_wq = 0
 "
 let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_new_list_item_indent = 2
+
+"
+" vim-rails
+"
+" Highly customizable with `projections`.
+" see: `:help rails-projections`
+let g:rails_projections = {
+  \ "js/src/*.tsx": { "command": "react" },
+  \ "js/src/*.ts": { "command": "react" },
+  \ "js/src/*.js": { "command": "react" },
+  \ "js/src/*.coffee": { "command": "react" },
+  \ "js/src/*.jade": { "command": "react" },
+\}
 
 
 
