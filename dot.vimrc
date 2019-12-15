@@ -18,14 +18,14 @@ Plugin 'godlygeek/tabular'       " -> plasticboy/vim-markdown
 Plugin 'plasticboy/vim-markdown' " Markdown highlight.
 
 " for TypeScript
-Plugin 'leafgarland/typescript-vim'  " what?
-Plugin 'peitalin/vim-jsx-typescript' " what?
+Plugin 'leafgarland/typescript-vim'  " TypeScript highlight.
+Plugin 'peitalin/vim-jsx-typescript' " JSX highlight.
 Plugin 'Quramy/tsuquyomi'            " TypeScript IDE, TSServer client. <Ctrl-]> for jumping to definition.
 
 " etc (sort alphabetically)
 Plugin 'groenewege/vim-less'        " LESS highlight.
 Plugin 'kchmck/vim-coffee-script'   " CoffeeScript highlight, indenting, compiling.
-Plugin 'scrooloose/syntastic'       " Syntax checking. (heavy?)
+Plugin 'scrooloose/syntastic'       " Syntax checking. (heavy performance?)
 Plugin 'slim-template/vim-slim'     " Slim highlight.
 Plugin 'statianzo/vim-jade'         " Jade.
 Plugin 'thinca/vim-quickrun'        " Run code snippet on Vim. Select codes and `:QuickRun`.
