@@ -10,13 +10,13 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim' " Let Vundle manage Vundle
 
 " Vim Scripts repos (http://vim-scripts.org/vim/scripts.html)
-" --- repos for others
+" --- dependents plugins
 Plugin 'L9' " -> FuzzyFinder
 Plugin 'godlygeek/tabular' " -> plasticboy/vim-markdown
 " --- repos combination
 Plugin 'leafgarland/typescript-vim'
 Plugin 'peitalin/vim-jsx-typescript'
-" --- repos
+" --- main plugins
 Plugin 'AutoComplPop'               " Keyword completion.
 Plugin 'FuzzyFinder'                " Find file by less keywords. `:FufFile` is like strong.
 Plugin 'endwise.vim'
