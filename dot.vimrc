@@ -19,7 +19,7 @@ Plugin 'peitalin/vim-jsx-typescript'
 " --- main plugins
 Plugin 'AutoComplPop'               " Keyword completion.
 Plugin 'FuzzyFinder'                " Find file by less keywords. `:FufFile` is like strong.
-Plugin 'endwise.vim'
+Plugin 'endwise.vim'                " def ... end
 Plugin 'groenewege/vim-less'
 Plugin 'kchmck/vim-coffee-script'   " only for coffee? for typescript?
 Plugin 'plasticboy/vim-markdown'
