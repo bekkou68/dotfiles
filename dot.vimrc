@@ -225,7 +225,9 @@ nnoremap <C-]> g<C-]>
 
 
 " Tips:
-" [map]  := map (recursive) | noremap (no recursive)
+" [map]  := map | noremap
+"              map: recursive, easy to break.
+"              noremap: not recursive, map to raw vim function, RECOMMENDED.
 " n[map] := normal mode
 " v[map] := visual mode
 " c[map] := command line mode
