@@ -1,14 +1,18 @@
-# add -p := ファイル差分を部分的に add。
-# add -u := 変更があった部分のみ add。
-# add -A := add -u かつ、add .。
+# Tips:
 #
-# blame -L 5,10 <filename> := 5 〜 10 行目に絞る。
-# blame -L /<rexp>/ <filename> := 正規表現で絞る。
+# add -p : partial
+# add -u : only updated
 #
-# rebase -i HEAD~4 := 4 コミット分のコミットをまとめる。
+# filter
+#   blame -L 5,10 <filename>
+#   blame -L /<rexp>/ <filename>
 #
-# rm --cached := 管理下のままファイルを削除。
-
+# {pull, fetch} --prune : delete stale remote branches
+#
+# rebase master
+# rebase -i HEAD~4 : Unify 4 commits.
+#
+# {diff, rm} --cached : staged
 [core]
   editor = /usr/bin/vim
   excludesfile = ~/.gitignore
@@ -21,48 +25,30 @@
   a = add
   ap = add --patch
 
-  bl = blame
   br = branch
   brd = branch -d
   brdf = branch -D # BRanch Delete Force
-  brm = branch -m
-  brr = branch -r
+  brm = branch -m # rename branch.
+  brr = branch -r # BRanch Remote
 
   ca = commit -v --amend
   ci = commit -v
-  cm = commit -m
   co = checkout
   cob = checkout -b
-  contributors = shortlog -sn # SCouter
+
+  contributors = shortlog -sn
 
   di = diff
 
-  fh = fetch
-  fp = fetch --prune
-
   gr = grep
 
-  l = log --format='[%h %ci] %s (%cn)' --date=local
   lg = log --graph --format='[%h %ci] %s (%cn)' --date=local # Log Graph
-  lp = log -p
+  lp = log -p # log with diff.
 
-  mg = merge
-  mgnf = merge --no-ff # MerGe No Fast-foreword
-
-  pp = pull --prune # always delete stale remote branches
-  pr = pull --rebase
   ps = push
-  psf = push --force-with-lease
-  pst = push --tags
 
-  rb = rebase
-  rbc = rebase --continue
-  rbr = branch -r
   rbrd = push --delete origin # Remote BRanch Delete
 
-  rsh = reset --hard
   rs = reset
 
   st = status -sb
-
-  staged = diff --cached
