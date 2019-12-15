@@ -2,26 +2,27 @@
 " Plugin Installation
 " ----------------------------------------------------------------------
 
-" REQUIRE for starting Vundle
+" REQUIRE to start Vundle
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim' " Let Vundle manage Vundle
 
-" Vim Scripts repos (http://vim-scripts.org/vim/scripts.html)
-" --- dependents plugins
-Plugin 'L9' " -> FuzzyFinder
+" Dependent plugins.
+Plugin 'L9'                " -> FuzzyFinder
 Plugin 'godlygeek/tabular' " -> plasticboy/vim-markdown
-" --- repos combination
+
+" Combination plugins. (what?)
 Plugin 'leafgarland/typescript-vim'
 Plugin 'peitalin/vim-jsx-typescript'
-" --- main plugins
+
+" Main plugins.
 Plugin 'AutoComplPop'               " Keyword completion.
 Plugin 'FuzzyFinder'                " Find file by less keywords. `:FufFile` is like strong.
 Plugin 'endwise.vim'                " def ... end
-Plugin 'groenewege/vim-less'
-Plugin 'kchmck/vim-coffee-script'   " only for coffee? for typescript?
+Plugin 'groenewege/vim-less'        " LESS highlight.
+Plugin 'kchmck/vim-coffee-script'   " CoffeeScript highlight, indenting, compiling.
 Plugin 'plasticboy/vim-markdown'
 Plugin 'scrooloose/syntastic'
 Plugin 'slim-template/vim-slim.git'
@@ -32,9 +33,9 @@ Plugin 'statianzo/vim-jade'
 Plugin 'tpope/vim-rails'            " Enable only Rails projects not to dirt env.
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'yanktmp.vim'
-Plugin 'Quramy/tsuquyomi' " typescript plugin. <Ctrl-]> for jumping to definition.
+Plugin 'Quramy/tsuquyomi'           " typescript plugin. <Ctrl-]> for jumping to definition.
 
-" REQUIRE for finishing Vundle
+" REQUIRE to finish Vundle.
 call vundle#end()
 filetype plugin indent on
 
