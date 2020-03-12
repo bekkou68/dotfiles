@@ -51,4 +51,5 @@
 
   rs = reset
 
+  sc = shortlog -s
   st = status -sb
