@@ -204,6 +204,7 @@ set noswapfile   " Make no swap file
 set visualbell   " No beep
 set tags="./tmp/tags,tags"   " Path for ctags
 set clipboard+=unnamed       " Make yank/paste links clipboard. It copys value to "* register".
+set nrformats-=octal         " Increment 07 to 10 with Ctrl+A ignoring octal
 
 map bf :e #<cr>  " Back to previous File
 map co 0i#j    " Comment Out and move to next line
