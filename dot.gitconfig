@@ -21,6 +21,8 @@
   email = tyanat.syadan.bekrob@gmail.com
 [color]
   ui = auto
+[pull]
+  rebase = false # always merge
 [alias]
   a = add
   ap = add --patch
