@@ -1,18 +1,28 @@
-# Tips:
+# * Command Tips
 #
-# add -p : partial
-# add -u : only updated
 #
-# filter
-#   blame -L 5,10 <filename>
-#   blame -L /<rexp>/ <filename>
+# ** rebase
 #
-# {pull, fetch} --prune : delete stale remote branches
+# $ rebase master
+# $ rebase -i HEAD~4 # Unify 4 commits.
 #
-# rebase master
-# rebase -i HEAD~4 : Unify 4 commits.
+#
+# ** -L: filter
+#
+# $ blame -L 5,10 <filename>
+# $ blame -L /<rexp>/ <filename>
+#
+#
+# ** add
+#
+# $ add -p # add files partially
+# $ add -u # add files which only updated
+#
+#
+# ** etc
 #
 # {diff, rm} --cached : staged
+# $ {pull, fetch} --prune : delete stale remote branches
 [core]
   editor = /usr/bin/vim
   excludesfile = ~/.gitignore
